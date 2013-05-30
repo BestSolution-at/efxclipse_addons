@@ -10,7 +10,7 @@
 
 	<target name="publish-distros" depends="build-distros">
 		<echo>Publishing distros</echo>
-		<copy todir="/builds/efxclipse/eclipse.org/sdks">
+		<copy todir="/builds/efxclipse/eclipse.org/sdks/nightly">
 			<fileset dir="/tmp/efxclipse-build/dist">
 				<include name="*"/>
 			</fileset>
