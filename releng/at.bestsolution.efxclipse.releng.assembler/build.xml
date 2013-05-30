@@ -65,6 +65,8 @@
 			<updatesite url="file:///builds/efxclipse/eclipse.org/p2-repos/ide/nightly/"/>
 			<updatesite url="http://download.eclipse.org/releases/kepler"/>
 			
+			<updatesite url="http://download.eclipse.org/e4/updates/0.14-I-builds/" version="4.3.0"/>
+			
 			<installunit name="org.eclipse.emf.sdk.feature.group" />
 			<installunit name="org.eclipse.xtext.sdk.feature.group" />
 			<installunit name="org.eclipse.emf.mwe2.runtime.sdk.feature.group" />
