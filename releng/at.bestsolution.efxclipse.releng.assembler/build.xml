@@ -10,6 +10,11 @@
 
 	<target name="publish-distros" depends="build-distros">
 		<echo>Publishing distros</echo>
+		<copy todir="/builds/efxclipse/eclipse.org/sdks">
+			<fileset dir="/tmp/efxclipse-build/dist">
+				<include name="*"/>
+			</fileset>
+		</copy>
 	</target>
 	
 	<target name="svg-standalone" depends="build-distros">
@@ -60,6 +65,7 @@
 
 	<target name="build-distros" description="Build distros">
 		<echo>Building distros</echo>
+		<deltree dir="/tmp/efxclipse-build/dist"/>
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
 			
 			<updatesite url="file:/builds/efxclipse/eclipse.org/p2-repos/ide/nightly/"/>
