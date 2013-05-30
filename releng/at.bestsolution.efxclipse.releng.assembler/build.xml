@@ -62,7 +62,7 @@
 		<echo>Building distros</echo>
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
 			
-			<updatesite url="file:///builds/efxclipse/eclipse.org/p2-repos/ide/nightly/"/>
+			<updatesite url="file:/builds/efxclipse/eclipse.org/p2-repos/ide/nightly/"/>
 			<updatesite url="http://download.eclipse.org/releases/kepler"/>
 			
 			<updatesite url="http://download.eclipse.org/e4/updates/0.14-I-builds/" version="4.3.0"/>
