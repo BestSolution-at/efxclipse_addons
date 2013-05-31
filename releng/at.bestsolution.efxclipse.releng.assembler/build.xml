@@ -4,7 +4,7 @@
 
 	<taskdef name="builder" classpath="${efx.distojar}" classname="at.bestsolution.releng.distrobuilder.ant.DistroBuilderTaskDef" />
 
-	<target name="publish" depends="build-distros">
+	<target name="publish" depends="build-distros, publish-distros">
 		<echo>Publishing done</echo>
 	</target>
 
