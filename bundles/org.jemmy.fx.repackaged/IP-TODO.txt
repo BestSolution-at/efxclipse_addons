@@ -1,0 +1,2 @@
+jemmy: CDDL
+jemmy-fx: GPL

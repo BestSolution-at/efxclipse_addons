@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="JemmyAWTInput.jar"/>
+	<classpathentry exported="true" kind="lib" path="JemmyBrowser.jar"/>
+	<classpathentry exported="true" kind="lib" path="JemmyCore.jar"/>
+	<classpathentry exported="true" kind="lib" path="JemmyFX.jar"/>
+	<classpathentry exported="true" kind="lib" path="JemmySupport.jar"/>
+	<classpathentry exported="true" kind="lib" path="GlassImage.jar"/>
+	<classpathentry exported="true" kind="lib" path="GlassRobot.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
