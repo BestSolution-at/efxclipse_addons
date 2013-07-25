@@ -31,6 +31,8 @@
 		
 		<module>../at.bestsolution.efxclipse.jemmy.feature</module>
 		<module>../at.bestsolution.efxclipse.jemmy.junit.feature</module>
+		
+		<module>../at.bestsolution.efxclipse.updatesite</module>
 	</modules>
 
 	<repositories>
