@@ -1,4 +1,4 @@
-package at.bestsolution.efxclipse.runtime.jemmy.internal;
+package at.bestsolution.efxclipse.jemmy.internal;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

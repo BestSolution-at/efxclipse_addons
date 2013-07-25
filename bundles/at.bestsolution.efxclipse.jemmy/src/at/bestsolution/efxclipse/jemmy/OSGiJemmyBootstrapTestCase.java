@@ -8,7 +8,7 @@
  * Contributors:
  *     Tom Schindl<tom.schindl@bestsolution.at> - initial API and implementation
  *******************************************************************************/
-package at.bestsolution.efxclipse.runtime.jemmy;
+package at.bestsolution.efxclipse.jemmy;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -31,7 +31,7 @@ import org.osgi.service.event.Event;
 import org.osgi.service.event.EventConstants;
 import org.osgi.service.event.EventHandler;
 
-import at.bestsolution.efxclipse.runtime.jemmy.internal.Activator;
+import at.bestsolution.efxclipse.jemmy.internal.Activator;
 
 public class OSGiJemmyBootstrapTestCase {
 
