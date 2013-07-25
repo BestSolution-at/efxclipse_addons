@@ -1,16 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<name>e(fx)clipse - Runtime - Jemmy - JUnit/OSGi</name>
-	<groupId>at.bestsolution.efxclipse.runtime</groupId>
-	<artifactId>at.bestsolution.efxclipse.runtime.jemmy</artifactId>
+	<name>e(fx)clipse addons - Jemmy - JUnit/OSGi</name>
+	<groupId>at.bestsolution.efxclipse</groupId>
+	<artifactId>at.bestsolution.efxclipse.jemmy</artifactId>
 	<packaging>eclipse-plugin</packaging>
 
 	<parent>
-		<groupId>at.bestsolution</groupId>
-		<artifactId>efxclipse</artifactId>
-		<relativePath>../at.bestsolution.efxclipse.releng/pom.xml</relativePath>
-		<version>0.8.1-SNAPSHOT</version>
+		<groupId>at.bestsolution.efxclipse</groupId>
+		<artifactId>releng</artifactId>
+		<relativePath>../../releng/at.bestsolution.efxclipse.releng/pom.xml</relativePath>
+		<version>0.9.0-SNAPSHOT</version>
 	</parent>
 
 	<build>
