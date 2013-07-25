@@ -28,37 +28,10 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-source-plugin</artifactId>
 			</plugin>
-			
-					<plugin>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>deploy</id>
-								<phase>deploy</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<tasks>
-										<delete includeemptydirs="false">
-											<fileset dir="${download-publish-path}">
-												<include name="**" />
-											</fileset>
-										</delete>
-										<copy includeemptydirs="false" todir="${download-publish-path}">
-											<fileset dir="target">
-												<include name="**" />
-											</fileset>
-										</copy>
-									</tasks>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
 		</plugins>
 	</build>
 
-<!--  	<profiles>
+	<profiles>
 		<profile>
 			<id>build-server</id>
 			<build>
@@ -68,7 +41,7 @@
 						<executions>
 							<execution>
 								<id>deploy</id>
-								<phase>deploy</phase>
+								<phase>install</phase>
 								<goals>
 									<goal>run</goal>
 								</goals>
@@ -92,6 +65,6 @@
 				</plugins>
 			</build>
 		</profile>
-	</profiles>-->
+	</profiles>
 
 </project>
