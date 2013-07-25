@@ -28,6 +28,9 @@
 	<modules>
 		<module>../../bundles/org.jemmy.fx.repackaged</module>
 		<module>../../bundles/at.bestsolution.efxclipse.jemmy</module>
+		
+		<module>../at.bestsolution.efxclipse.jemmy.feature</module>
+		<module>../at.bestsolution.efxclipse.jemmy.junit.feature</module>
 	</modules>
 
 	<repositories>
