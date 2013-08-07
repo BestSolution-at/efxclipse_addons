@@ -21,18 +21,36 @@ import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
 public class LessCSSLoader {
-	private ScriptEngine e;
+	private ScriptEngine engine;
 	
 	public LessCSSLoader() {
 		ScriptEngineManager mgr = new ScriptEngineManager();
-		e = mgr.getEngineByExtension("js");
+		engine = mgr.getEngineByExtension("js");
 		
 		try {
-			e.eval(createParserScript());
-		} catch (ScriptException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			engine.eval(createParserScript());
+		} catch (ScriptException e) {
+			throw new RuntimeException(e);
 		}
+	}
+	
+	public URL loadLess(URL lessFile) {
+		try {
+			StringBuilder lessContent = new StringBuilder();
+			readFileContent(lessFile, lessContent);
+			
+			Object rv = ((Invocable)engine).invokeFunction("parseString", lessContent.toString());
+			File f = File.createTempFile("less_", ".css");
+			f.deleteOnExit();
+			try(FileOutputStream out = new FileOutputStream(f) ) {
+				out.write(rv.toString().getBytes());
+				out.close();
+			}
+			return f.toURI().toURL();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+		
 	}
 	
 	private static String createParserScript() {
@@ -56,24 +74,5 @@ public class LessCSSLoader {
 			// TODO: handle exception
 		}
 	}
-	
-	public URL loadLess(URL lessFile) {
-		try {
-			StringBuilder lessContent = new StringBuilder();
-			readFileContent(lessFile, lessContent);
-			
-			Object rv = ((Invocable)e).invokeFunction("parseString", lessContent.toString());
-			File f = File.createTempFile("less_", ".css");
-			f.deleteOnExit();
-			
-			try(FileOutputStream out = new FileOutputStream(f) ) {
-				out.write(rv.toString().getBytes());
-				out.close();
-			}
-			return f.toURI().toURL();
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-		
-	}
+
 }
