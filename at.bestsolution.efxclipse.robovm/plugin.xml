@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer?after=additions">
+         <command
+               commandId="at.bestsolution.efxclipse.robovm.robovmbuild"
+               label="Generate RoboVM Build"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <with
+                     variable="selection">
+                  <test
+                        forcePluginActivation="true"
+                        property="org.eclipse.fx.ide.ui.mobile.sim.launch.isMobileApp">
+                  </test>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="at.bestsolution.efxclipse.robovm.RobovmSetupHandler"
+            id="at.bestsolution.efxclipse.robovm.robovmbuild"
+            name="Generate RoboVM Build">
+      </command>
+   </extension>
+
+</plugin>
