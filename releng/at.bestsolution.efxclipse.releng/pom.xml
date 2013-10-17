@@ -28,9 +28,11 @@
 	<modules>
 		<module>../../bundles/org.jemmy.fx.repackaged</module>
 		<module>../../bundles/at.bestsolution.efxclipse.jemmy</module>
+		<module>../../bundles/at.bestsolution.efxclipse.robovm</module>
 		
 		<module>../at.bestsolution.efxclipse.jemmy.feature</module>
 		<module>../at.bestsolution.efxclipse.jemmy.junit.feature</module>
+		<module>../at.bestsolution.efxclipse.robovm.feature</module>
 		
 		<module>../at.bestsolution.efxclipse.updatesite</module>
 	</modules>

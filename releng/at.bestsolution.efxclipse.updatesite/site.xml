@@ -6,5 +6,9 @@
    <feature url="features/at.bestsolution.efxclipse.jemmy.junit.feature_0.9.0.qualifier.jar" id="at.bestsolution.efxclipse.jemmy.junit.feature" version="0.9.0.qualifier">
       <category name="JUnit"/>
    </feature>
+   <feature url="features/at.bestsolution.efxclipse.robovm.feature_0.9.0.qualifier.jar" id="at.bestsolution.efxclipse.robovm.feature" version="0.9.0.qualifier">
+      <category name="mobile"/>
+   </feature>
    <category-def name="JUnit" label="JUnit Testing"/>
+   <category-def name="mobile" label="mobile"/>
 </site>
