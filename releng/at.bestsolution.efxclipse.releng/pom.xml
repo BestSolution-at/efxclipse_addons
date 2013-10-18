@@ -33,6 +33,7 @@
 		
 		<module>../at.bestsolution.efxclipse.jemmy.feature</module>
 		<module>../at.bestsolution.efxclipse.jemmy.junit.feature</module>
+		<module>../at.bestsolution.efxclipse.less.feature</module>
 		<module>../at.bestsolution.efxclipse.robovm.feature</module>
 		
 		<module>../at.bestsolution.efxclipse.updatesite</module>
