@@ -28,6 +28,7 @@
 	<modules>
 		<module>../../bundles/org.jemmy.fx.repackaged</module>
 		<module>../../bundles/at.bestsolution.efxclipse.jemmy</module>
+		<module>../../bundles/at.bestsolution.efxclipse.less</module>
 		<module>../../bundles/at.bestsolution.efxclipse.robovm</module>
 		
 		<module>../at.bestsolution.efxclipse.jemmy.feature</module>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="at.bestsolution.efxclipse.jemmy.feature"
-      label="Repackage Jemmy Test Framework"
+      label="e(fx)clipse addons - Runtime - Repackage Jemmy Test Framework"
       version="3.0.0.qualifier">
 
    <description url="http://www.example.com/description">
