@@ -99,7 +99,7 @@
 			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" version="4.3.0" />
 			<installunit name="org.eclipse.fx.ide.all.kepler.feature.feature.group" version="4.3.0" />
 			
-			<installunit name="at.bestsolution.efxclipse.robovm.feature" version="4.3.0" />
+			<installunit name="at.bestsolution.efxclipse.robovm.feature.group" version="4.3.0" />
 			
 		</builder>
 	</target>
