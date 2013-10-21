@@ -69,7 +69,7 @@
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
 			
 			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site"/>
-			<updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/addons/nightly/"/>
+			<updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/addons/nightly/site"/>
 			<updatesite url="http://download.eclipse.org/releases/kepler"/>
 			
 			<updatesite url="http://download.eclipse.org/e4/downloads/drops/R-0.14-201306242200/repository" version="4.3.0"/>
