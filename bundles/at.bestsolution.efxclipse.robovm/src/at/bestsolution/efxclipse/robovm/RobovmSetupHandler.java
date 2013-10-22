@@ -11,11 +11,12 @@
 package at.bestsolution.efxclipse.robovm;
 
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -143,7 +144,7 @@ public class RobovmSetupHandler extends AbstractHandler {
 				File dir = buildFolder.getLocation().toFile();
 				export("binaries/robovm-"+ROBOVM_VERSION+".tar.gz", dir.getAbsolutePath(), "robovm-"+ROBOVM_VERSION+".tar.gz");
 				Runtime.getRuntime().exec(new String[]{"tar","xzvf","robovm-"+ROBOVM_VERSION+".tar.gz"}, new String[0], dir );
-				new File(dir,"robovm-"+ROBOVM_VERSION).renameTo(new File(dir,"robovm"));
+				Files.move(new File(dir,"robovm-"+ROBOVM_VERSION).toPath(), new File(dir,"robovm").toPath(), StandardCopyOption.ATOMIC_MOVE);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -170,6 +171,7 @@ public class RobovmSetupHandler extends AbstractHandler {
 		try {
 			File dir = buildFolder.getLocation().toFile();
 			export("binaries/robovm-run.sh",dir.getAbsolutePath(),"robovm-run.sh");
+			export("binaries/org.eclipse.fx.fxml.compiler_0.9.0-SNAPSHOT.jar", dir.getAbsolutePath(), "org.eclipse.fx.fxml.compiler.jar");
 			new File(dir,"robovm-run.sh").setExecutable(true);
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
@@ -258,7 +260,6 @@ public class RobovmSetupHandler extends AbstractHandler {
 					listRefLibraries.add( e.getPath() );
 				}
 				else if ( e.getEntryKind() == IClasspathEntry.CPE_SOURCE ) {
-					System.err.println("ENTRY: " + e);
 					listProjectSourceDirs.add( e.getPath() );
 				}
 				else if ( e.getEntryKind() == IClasspathEntry.CPE_CONTAINER ) {

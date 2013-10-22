@@ -94,6 +94,7 @@ app.name=«applicationName»
     <root>com.sun.javafx.font.**</root>
     <root>com.sun.scenario.effect.impl.prism.ps.**</root>
     <root>com.sun.scenario.effect.impl.es2.ES2ShaderSource</root>
+    <root>application.**</root>
   </roots>
   <classpath>
   	<classpathentry>jfx78/jfxrt.jar</classpathentry>
@@ -178,6 +179,16 @@ app.name=«applicationName»
 	def generate(BuildConfiguration config) '''
 	<?xml version="1.0" encoding="UTF-8"?>
 	<project name="robobuild" default="do-run-simulator-ipad" basedir=".">
+		<path id="fxcompile">
+			<filelist>
+				<file name="build/classes"/>
+				<file name="org.eclipse.fx.fxml.compiler.jar"/>
+			</filelist>
+			<fileset dir="build/libs">
+				<include name="*.jar"/>
+			</fileset>
+		</path>
+		
 		«createLocalSetup(config)»
 		«compileTarget(config)»
 		«createDoRunSimulatorIPad(config)»
@@ -272,6 +283,25 @@ app.name=«applicationName»
 				</fileset>
 			</classpath>
 		</javac>
+		
+		<!-- Transform FXML-Files -->
+		<taskdef name="fxml-compiler" classpathref="fxcompile" classname="org.eclipse.fx.ide.fxml.compiler.ant.FXMLCompilerTask" />
+
+		<fxml-compiler sourcedir="build/src" destdir="build/gen-src"/>
+		<javac srcdir="build/gen-src" destdir="build/classes">
+			<classpath>
+				<filelist>
+					<file name="build/classes"/>
+				</filelist>
+				<fileset dir="build/libs">
+					<include name="*"/>
+				</fileset>
+				<fileset dir="robovm/lib">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+
 		
 		<!-- Copy over none Java-Files -->
 		<copy todir="build/classes">
