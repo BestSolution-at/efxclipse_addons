@@ -23,8 +23,8 @@
 		<mkdir dir="/tmp/efx-build/svgrepack"/>
 		<mkdir dir="/tmp/efx-build/svgrepack/tmp"/>
 		
-		<gunzip dest="/tmp/efx-build/svgrepack" src="/tmp/efx-build/dist/eclipse-SDK-4.3.0-linux-gtk-efx-${efx.version}.tar.gz"/>
-		<untar dest="/tmp/efx-build/svgrepack" src="/tmp/efx-build/svgrepack/eclipse-SDK-4.3.0-linux-gtk-efx-${efx.version}.tar" />
+		<gunzip dest="/tmp/efx-build/svgrepack" src="/tmp/efx-build/dist/eclipse-SDK-4.3.1-linux-gtk-efx-${efx.version}.tar.gz"/>
+		<untar dest="/tmp/efx-build/svgrepack" src="/tmp/efx-build/svgrepack/eclipse-SDK-4.3.1-linux-gtk-efx-${efx.version}.tar" />
 		<unjar dest="/tmp/efx-build/svgrepack/tmp">
 			<fileset dir="/tmp/efx-build/svgrepack/eclipse/plugins">
 				<include name="org.eclipse.emf.ecore_*.jar"/>
@@ -73,7 +73,7 @@
 			<updatesite url="http://download.eclipse.org/releases/kepler"/>
 			<updatesite url="http://dist.springsource.com/snapshot/TOOLS/java8/e43"/>
 			
-			<updatesite url="http://download.eclipse.org/e4/downloads/drops/R-0.14-201306242200/repository" version="4.3.0"/>
+			<updatesite url="http://download.eclipse.org/e4/downloads/drops/R-0.14-201306242200/repository" version="4.3.1"/>
 			
 			<installunit name="org.eclipse.emf.sdk.feature.group" />
 			<installunit name="org.eclipse.xtext.sdk.feature.group" />
@@ -92,19 +92,14 @@
 			<installunit name="mercurialeclipse.feature.group" os="win32" />
 			<installunit name="com.intland.hgbinary.win32.feature.group" os="win32" />
 			
-			<installunit name="org.eclipse.fx.ide.all.prekepler.feature.feature.group" version="3.8.2" />
+			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" version="4.3.1" />
+			<installunit name="org.eclipse.fx.ide.all.kepler.feature.feature.group" version="4.3.1" />
 			
-			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" version="4.2.2" />
-			<installunit name="org.eclipse.fx.ide.all.prekepler.feature.group" version="4.2.2" />
+			<installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" version="4.3.1" />
 			
-			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" version="4.3.0" />
-			<installunit name="org.eclipse.fx.ide.all.kepler.feature.feature.group" version="4.3.0" />
-			
-			<installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" version="4.3.0" />
-			
-			<installunit name="org.eclipse.rcp.java8patch.feature.group" version="4.3.0"/>
-			<installunit name="org.eclipse.jdt.java8patch.feature.group" version="4.3.0"/>
-			<installunit name="org.eclipse.pde.java8patch.feature.group" version="4.3.0"/>
+			<installunit name="org.eclipse.rcp.java8patch.feature.group" version="4.3.1"/>
+			<installunit name="org.eclipse.jdt.java8patch.feature.group" version="4.3.1"/>
+			<installunit name="org.eclipse.pde.java8patch.feature.group" version="4.3.1"/>
 			
 		</builder>
 	</target>
