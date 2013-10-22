@@ -71,6 +71,7 @@
 			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site"/>
 			<updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/addons/nightly/site"/>
 			<updatesite url="http://download.eclipse.org/releases/kepler"/>
+			<updatesite url="http://dist.springsource.com/snapshot/TOOLS/java8/e43"/>
 			
 			<updatesite url="http://download.eclipse.org/e4/downloads/drops/R-0.14-201306242200/repository" version="4.3.0"/>
 			
@@ -100,6 +101,10 @@
 			<installunit name="org.eclipse.fx.ide.all.kepler.feature.feature.group" version="4.3.0" />
 			
 			<installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" version="4.3.0" />
+			
+			<installunit name="org.eclipse.rcp.java8patch.feature.group" version="4.3.0"/>
+			<installunit name="org.eclipse.jdt.java8patch.feature.group" version="4.3.0"/>
+			<installunit name="org.eclipse.pde.java8patch.feature.group" version="4.3.0"/>
 			
 		</builder>
 	</target>
