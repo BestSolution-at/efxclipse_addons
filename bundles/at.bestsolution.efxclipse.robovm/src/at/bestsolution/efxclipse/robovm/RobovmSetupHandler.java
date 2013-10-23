@@ -143,7 +143,8 @@ public class RobovmSetupHandler extends AbstractHandler {
 			try {
 				File dir = buildFolder.getLocation().toFile();
 				export("binaries/robovm-"+ROBOVM_VERSION+".tar.gz", dir.getAbsolutePath(), "robovm-"+ROBOVM_VERSION+".tar.gz");
-				Runtime.getRuntime().exec(new String[]{"tar","xzvf","robovm-"+ROBOVM_VERSION+".tar.gz"}, new String[0], dir );
+				Process exec = Runtime.getRuntime().exec(new String[]{"tar","xzvf","robovm-"+ROBOVM_VERSION+".tar.gz"}, new String[0], dir );
+				exec.waitFor();
 				Files.move(new File(dir,"robovm-"+ROBOVM_VERSION).toPath(), new File(dir,"robovm").toPath(), StandardCopyOption.ATOMIC_MOVE);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
