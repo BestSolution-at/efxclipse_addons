@@ -54,6 +54,7 @@ class RobovmBuild {
 			Region root = (Region)m.createUI();
 			root.setPadding(new Insets(30,0,0,0));
 			Scene s = new Scene(root,100,100,true);
+			s.getStylesheets().addAll(m.getInitialStylesheets());
 			arg0.setScene(s);
 			arg0.show();
 		}
