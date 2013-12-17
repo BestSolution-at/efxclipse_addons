@@ -71,6 +71,7 @@
 			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site"/>
 			<updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/addons/nightly/site"/>
 			<updatesite url="http://download.eclipse.org/releases/kepler"/>
+			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
 			<updatesite url="http://dist.springsource.com/snapshot/TOOLS/java8/e43"/>
 			
 			<updatesite url="http://download.eclipse.org/e4/downloads/drops/R-0.14-201306242200/repository" version="4.3.1"/>
