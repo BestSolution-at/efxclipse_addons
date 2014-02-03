@@ -2,7 +2,7 @@
 <feature
       id="at.bestsolution.efxclipse.jemmy.junit.feature"
       label="e(fx)clipse addons - Runtime - Jemmy OSGi-JUnit integration"
-      version="0.9.0.qualifier">
+      version="1.0.0.qualifier">
 
    <description url="http://www.example.com/description">
       Integration of Jemmy into OSGi-Applications

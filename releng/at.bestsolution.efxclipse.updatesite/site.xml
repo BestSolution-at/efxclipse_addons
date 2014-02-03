@@ -3,13 +3,13 @@
    <feature url="features/at.bestsolution.efxclipse.jemmy.feature_3.0.0.qualifier.jar" id="at.bestsolution.efxclipse.jemmy.feature" version="3.0.0.qualifier">
       <category name="Runtime"/>
    </feature>
-   <feature url="features/at.bestsolution.efxclipse.jemmy.junit.feature_0.9.0.qualifier.jar" id="at.bestsolution.efxclipse.jemmy.junit.feature" version="0.9.0.qualifier">
+   <feature url="features/at.bestsolution.efxclipse.jemmy.junit.feature_1.0.0.qualifier.jar" id="at.bestsolution.efxclipse.jemmy.junit.feature" version="1.0.0.qualifier">
       <category name="Runtime"/>
    </feature>
-   <feature url="features/at.bestsolution.efxclipse.robovm.feature_0.9.0.qualifier.jar" id="at.bestsolution.efxclipse.robovm.feature" version="0.9.0.qualifier">
+   <feature url="features/at.bestsolution.efxclipse.robovm.feature_1.0.0.qualifier.jar" id="at.bestsolution.efxclipse.robovm.feature" version="1.0.0.qualifier">
       <category name="Tooling"/>
    </feature>
-   <feature url="features/at.bestsolution.efxclipse.less.feature_0.9.0.qualifier.jar" id="at.bestsolution.efxclipse.less.feature" version="0.9.0.qualifier">
+   <feature url="features/at.bestsolution.efxclipse.less.feature_1.0.0.qualifier.jar" id="at.bestsolution.efxclipse.less.feature" version="1.0.0.qualifier">
       <category name="Runtime"/>
    </feature>
    <category-def name="Runtime" label="Runtime Addons"/>
