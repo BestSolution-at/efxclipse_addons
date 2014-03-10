@@ -107,7 +107,7 @@
 			
 			<!--installunit name="org.eclipse.rcp.java8patch.feature.group" /-->
 			<installunit name="org.eclipse.jdt.java8patch.feature.group" />
-			<installunit name="org.eclipse.pde.java8patch.feature.group" />
+			<!--installunit name="org.eclipse.pde.java8patch.feature.group" /-->
 			
 		</builder>
 	</target>
