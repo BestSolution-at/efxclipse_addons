@@ -106,7 +106,7 @@
 			
 			<installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" />
 			
-			<!--installunit name="org.eclipse.rcp.java8patch.feature.group" /-->
+			<installunit name="org.eclipse.rcp.java8patch.feature.group" version="4.3.2"/>
 			<installunit name="org.eclipse.jdt.java8patch.feature.group" />
 			<!--installunit name="org.eclipse.pde.java8patch.feature.group" /-->
 			
