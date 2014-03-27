@@ -69,13 +69,13 @@
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
 			<updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/addons/nightly/site"/>
 			
-			<updatesite url="http://download.eclipse.org/efxclipse/updates-released/0.9.0/site" version="4.3.1"/>
+			<updatesite url="http://download.eclipse.org/efxclipse/updates-released/0.9.0/site" version="4.3.2"/>
 			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site" version="4.4.0"/>
 			
-			<updatesite url="http://download.eclipse.org/releases/kepler" version="4.3.1" />
+			<updatesite url="http://download.eclipse.org/releases/kepler" version="4.3.2" />
 			<updatesite url="http://download.eclipse.org/releases/luna" version="4.4.0"/>
 
-			<updatesite url="http://download.eclipse.org/e4/downloads/drops/R-0.14-201306242200/repository" version="4.3.1"/>
+			<updatesite url="http://download.eclipse.org/e4/downloads/drops/R-0.14-201306242200/repository" version="4.3.2"/>
 			<updatesite url="http://download.eclipse.org/e4/updates/0.16-I-builds" version="4.4.0"/>
 			
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
@@ -100,7 +100,7 @@
 			
 			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" />
 			
-			<installunit name="org.eclipse.fx.ide.all.kepler.feature.feature.group" version="4.3.1" />
+			<installunit name="org.eclipse.fx.ide.all.kepler.feature.feature.group" version="4.3.2" />
 			<installunit name="org.eclipse.fx.ide.feature.feature.group" version="4.4.0" />
 			
 			<installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" />
