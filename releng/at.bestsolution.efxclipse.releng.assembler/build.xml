@@ -87,9 +87,9 @@
 			<installunit name="org.eclipse.emf.mwe2.runtime.sdk.feature.group" version="4.4.0" />
 			<installunit name="org.eclipse.emf.mwe2.language.sdk.feature.group" version="4.4.0" />
 
-			<installunit name="org.eclipse.xtext.sdk.feature.group/2.5.0" version="4.3.2" />
-			<installunit name="org.eclipse.emf.mwe2.runtime.sdk.feature.group/2.5.0" version="4.3.2" />
-			<installunit name="org.eclipse.emf.mwe2.language.sdk.feature.group/2.5.0" version="4.3.2" />
+			<installunit name="org.eclipse.xtext.sdk.feature.group/2.5.1" version="4.3.2" />
+			<installunit name="org.eclipse.emf.mwe2.runtime.sdk.feature.group/2.5.1" version="4.3.2" />
+			<installunit name="org.eclipse.emf.mwe2.language.sdk.feature.group/2.5.1" version="4.3.2" />
 			
 			<installunit name="org.eclipse.wst.xml_ui.feature.feature.group" />
 			<installunit name="org.eclipse.egit.feature.group" />
