@@ -96,7 +96,7 @@
 			<installunit name="org.eclipse.m2e.feature.feature.group"/>
 			
 			<installunit name="org.tigris.subversion.clientadapter.javahl.feature.feature.group" os="win32" arch="x86" />
-			<installunit name="mercurialeclipse.feature.group" os="win32" />
+			<!--installunit name="mercurialeclipse.feature.group" os="win32" /-->
 			<!--installunit name="com.intland.hgbinary.win32.feature.group" os="win32" /-->
 			
 			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" />
