@@ -79,7 +79,7 @@
 			<updatesite url="http://download.eclipse.org/e4/updates/0.16-I-builds" version="4.4.0"/>
 			
 			<!--updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" version="4.4.0"/-->
-			<updatesite url="http://download.eclipse.org/eclipse/updates/4.3-P-builds/"/>
+			<!--updatesite url="http://download.eclipse.org/eclipse/updates/4.3-P-builds/"/-->
 			
 			<installunit name="org.eclipse.emf.sdk.feature.group" />
 			
@@ -107,8 +107,8 @@
 			<installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" />
 			
 			<!--installunit name="org.eclipse.rcp.java8patch.feature.group" version="4.3.2"/-->
-			<installunit name="org.eclipse.jdt.java8patch.feature.group" />
-			<installunit name="org.eclipse.pde.java8patch.feature.group" version="4.3.2"/>
+			<!--installunit name="org.eclipse.jdt.java8patch.feature.group" /-->
+			<!--installunit name="org.eclipse.pde.java8patch.feature.group" version="4.3.2"/-->
 			
 		</builder>
 	</target>
