@@ -72,12 +72,12 @@
 			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site" version="4.4.0"/>
 			
 			<updatesite url="http://download.eclipse.org/releases/luna" version="4.4.0"/>
-			<updatesite url="http://download.eclipse.org/modeling/emf/emf/updates/2.10milestones" version="4.4.0"/>
+			<!--updatesite url="http://download.eclipse.org/modeling/emf/emf/updates/2.10milestones" version="4.4.0"/-->
 
-			<updatesite url="http://download.eclipse.org/e4/updates/0.16-I-builds" version="4.4.0"/>
-			<updatesite url="http://cbes.javaforge.com/update"/>
+			<updatesite url="http://download.eclipse.org/e4/downloads/drops/S-0.16-201408072200/repository" version="4.4.0"/>
+			<!--updatesite url="http://cbes.javaforge.com/update"/-->
 			
-			<!--updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" version="4.4.0"/-->
+			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" version="4.4.0"/>
 			<!--updatesite url="http://download.eclipse.org/eclipse/updates/4.3-P-builds/"/-->
 			
 			<installunit name="org.eclipse.emf.sdk.feature.group" />
@@ -95,14 +95,14 @@
 			<installunit name="org.eclipse.m2e.feature.feature.group"/>
 			
 			<installunit name="org.tigris.subversion.clientadapter.javahl.feature.feature.group" os="win32" arch="x86" />
-			<installunit name="mercurialeclipse.feature.group" os="win32" />
-			<installunit name="com.intland.hgbinary.win32.feature.group" os="win32" />
+			<!--installunit name="mercurialeclipse.feature.group" os="win32" />
+			<installunit name="com.intland.hgbinary.win32.feature.group" os="win32" /-->
 			
 			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" />
 			
 			<installunit name="org.eclipse.fx.ide.feature.feature.group" version="4.4.0" />
 			
-			<installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" />
+			<!--installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" /-->
 			
 			<!--installunit name="org.eclipse.rcp.java8patch.feature.group" version="4.3.2"/-->
 			<!--installunit name="org.eclipse.jdt.java8patch.feature.group" /-->
