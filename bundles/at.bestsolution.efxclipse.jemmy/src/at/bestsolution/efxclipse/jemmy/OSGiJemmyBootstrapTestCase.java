@@ -78,7 +78,7 @@ public class OSGiJemmyBootstrapTestCase {
 				};
 
 				Dictionary<String, String> properties = new Hashtable<String, String>();
-				properties.put(EventConstants.EVENT_TOPIC, "efxapp/applicationLaunched");
+				properties.put(EventConstants.EVENT_TOPIC, "org/eclipse/fx/E4Application/Launched");
 				Activator.getContext().registerService(EventHandler.class, handler, properties);
 				
 				ServiceReference<ApplicationDescriptor> ref = col.iterator().next();
