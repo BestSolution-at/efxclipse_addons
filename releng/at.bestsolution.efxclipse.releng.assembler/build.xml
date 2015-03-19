@@ -1,5 +1,5 @@
 <project default="publish">
-	<property name="efx.version" value="1.2.0-SNAPSHOT" />
+	<property name="efx.version" value="2.0.0-SNAPSHOT" />
 	<property name="efx.distojar" value="at.bestsolution.releng.distrobuilder-0.0.1-SNAPSHOT.jar" />
 
 	<taskdef name="builder" classpath="${efx.distojar}" classname="at.bestsolution.releng.distrobuilder.ant.DistroBuilderTaskDef" />
@@ -67,17 +67,21 @@
 		<echo>Building distros</echo>
 		<deltree dir="/tmp/efxclipse-build/dist"/>
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
-			<updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/addons/nightly/site"/>
+			<!--updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/addons/nightly/site"/-->
 
 			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site" version="4.4.0"/>
+			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site" version="4.5.0"/>
 
 			<updatesite url="http://download.eclipse.org/releases/luna" version="4.4.0"/>
+			<updatesite url="http://download.eclipse.org/releases/mars" version="4.5.0"/>
 			<!--updatesite url="http://download.eclipse.org/modeling/emf/emf/updates/2.10milestones" version="4.4.0"/-->
 
 			<updatesite url="http://download.eclipse.org/e4/downloads/drops/S-0.16-201408072200/repository" version="4.4.0"/>
+			<updatesite url="http://download.eclipse.org/e4/downloads/drops/S-0.16-201408072200/repository" version="4.5.0"/>
 			<!--updatesite url="http://cbes.javaforge.com/update"/-->
 
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" version="4.4.0"/>
+			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" version="4.5.0"/>
 			<!--updatesite url="http://download.eclipse.org/eclipse/updates/4.3-P-builds/"/-->
 
 			<installunit name="org.eclipse.emf.sdk.feature.group" />
