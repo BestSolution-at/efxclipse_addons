@@ -105,6 +105,7 @@
 			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" />
 
 			<installunit name="org.eclipse.fx.ide.feature.feature.group" version="4.4.0" />
+			<installunit name="org.eclipse.fx.ide.feature.feature.group" version="4.5.0" />
 
 			<!--installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" /-->
 
