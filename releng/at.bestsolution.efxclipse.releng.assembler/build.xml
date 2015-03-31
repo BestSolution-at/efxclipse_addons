@@ -74,6 +74,8 @@
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
 			<updatesite url="http://download.eclipticalsoftware.com/updates/"/>
 			<updatesite url="http://dl.bintray.com/bndtools/bndtools/latest/"/>
+			<updatesite url="http://andrei.gmxhome.de/eclipse/"/>
+			<updatesite url="http://update.eclemma.org/"/>
 
 			<installunit name="org.eclipse.emf.sdk.feature.group" />
 
@@ -97,6 +99,15 @@
 			<installunit name="ca.ecliptical.pde.ds.feature.group" />
 			<installunit name="bndtools.main.feature.feature.group" />
 			<installunit name="bndtools.jarviewer.feature.feature.group" />
+			
+			<installunit name="AnyEditTools.feature.group" />
+			<installunit name="de.loskutov.BytecodeOutline.feature.feature.group" />
+			<installunit name="DataHierarchy.feature.group" />
+			<installunit name="FileSync.feature.group" />
+			<installunit name="edu.umd.cs.findbugs.plugin.eclipse.feature.group" />
+			<installunit name="JDepend4Eclipse.feature.group" />
+			<installunit name="zipeditor.feature.group" />
+			<installunit name="com.mountainminds.eclemma.feature.feature.group" />
 
 		</builder>
 	</target>
