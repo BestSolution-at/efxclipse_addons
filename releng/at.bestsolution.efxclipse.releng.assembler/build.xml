@@ -70,7 +70,7 @@
 
 			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site"/>
 			<updatesite url="http://download.eclipse.org/releases/mars"/>
-			<updatesite url="http://download.eclipse.org/e4/downloads/drops/S-0.17-201501051100/repository"/>
+			<updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/e4-tools/site/"/>
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
 			<updatesite url="http://download.eclipticalsoftware.com/updates/"/>
 			<updatesite url="http://dl.bintray.com/bndtools/bndtools/latest/"/>
