@@ -67,20 +67,13 @@
 		<echo>Building distros</echo>
 		<deltree dir="/tmp/efxclipse-build/dist"/>
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
-			<!--updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/addons/nightly/site"/-->
 
-			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site" version="4.5.0"/>
-
-			<updatesite url="http://download.eclipse.org/releases/mars" version="4.5.0"/>
-
-			<updatesite url="http://download.eclipse.org/e4/downloads/drops/S-0.17-201501051100/repository" version="4.5.0"/>
-			<!--updatesite url="http://cbes.javaforge.com/update"/-->
-
-			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" version="4.4.0"/>
-			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" version="4.5.0"/>
-			<!--updatesite url="http://download.eclipse.org/eclipse/updates/4.3-P-builds/"/-->
-			
-			<updatesite url="http://download.eclipticalsoftware.com/updates/" version="4.5.0"/>
+			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site"/>
+			<updatesite url="http://download.eclipse.org/releases/mars"/>
+			<updatesite url="http://download.eclipse.org/e4/downloads/drops/S-0.17-201501051100/repository"/>
+			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+			<updatesite url="http://download.eclipticalsoftware.com/updates/"/>
+			<updatesite url="http://dl.bintray.com/bndtools/bndtools/latest/"/>
 
 			<installunit name="org.eclipse.emf.sdk.feature.group" />
 
@@ -97,19 +90,13 @@
 			<installunit name="org.eclipse.m2e.feature.feature.group"/>
 
 			<installunit name="org.tigris.subversion.clientadapter.javahl.feature.feature.group" os="win32" arch="x86" />
-			<!--installunit name="mercurialeclipse.feature.group" os="win32" />
-			<installunit name="com.intland.hgbinary.win32.feature.group" os="win32" /-->
 
 			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" />
 
-			<installunit name="org.eclipse.fx.ide.feature.feature.group" version="4.5.0" />
-			<installunit name="ca.ecliptical.pde.ds.feature.group" version="4.5.0" />
-
-			<!--installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" /-->
-
-			<!--installunit name="org.eclipse.rcp.java8patch.feature.group" version="4.3.2"/-->
-			<!--installunit name="org.eclipse.jdt.java8patch.feature.group" /-->
-			<!--installunit name="org.eclipse.pde.java8patch.feature.group" version="4.3.2"/-->
+			<installunit name="org.eclipse.fx.ide.feature.feature.group" />
+			<installunit name="ca.ecliptical.pde.ds.feature.group" />
+			<installunit name="bndtools.main.feature.feature.group" />
+			<installunit name="bndtools.jarviewer.feature.feature.group" />
 
 		</builder>
 	</target>
