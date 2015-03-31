@@ -69,20 +69,18 @@
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
 			<!--updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/addons/nightly/site"/-->
 
-			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site" version="4.4.0"/>
 			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site" version="4.5.0"/>
 
-			<updatesite url="http://download.eclipse.org/releases/luna" version="4.4.0"/>
 			<updatesite url="http://download.eclipse.org/releases/mars" version="4.5.0"/>
-			<!--updatesite url="http://download.eclipse.org/modeling/emf/emf/updates/2.10milestones" version="4.4.0"/-->
 
-			<updatesite url="http://download.eclipse.org/e4/downloads/drops/S-0.16-201408072200/repository" version="4.4.0"/>
-			<updatesite url="http://download.eclipse.org/e4/downloads/drops/S-0.16-201408072200/repository" version="4.5.0"/>
+			<updatesite url="http://download.eclipse.org/e4/downloads/drops/S-0.17-201501051100/repository" version="4.5.0"/>
 			<!--updatesite url="http://cbes.javaforge.com/update"/-->
 
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" version="4.4.0"/>
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" version="4.5.0"/>
 			<!--updatesite url="http://download.eclipse.org/eclipse/updates/4.3-P-builds/"/-->
+			
+			<updatesite url="http://download.eclipticalsoftware.com/updates/" version="4.5.0"/>
 
 			<installunit name="org.eclipse.emf.sdk.feature.group" />
 
@@ -104,8 +102,8 @@
 
 			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" />
 
-			<installunit name="org.eclipse.fx.ide.feature.feature.group" version="4.4.0" />
 			<installunit name="org.eclipse.fx.ide.feature.feature.group" version="4.5.0" />
+			<installunit name="ca.ecliptical.pde.ds.feature.group" version="4.5.0" />
 
 			<!--installunit name="at.bestsolution.efxclipse.robovm.feature.feature.group" /-->
 
