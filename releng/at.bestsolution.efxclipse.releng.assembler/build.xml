@@ -68,7 +68,7 @@
 		<deltree dir="/tmp/efxclipse-build/dist"/>
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
 
-			<updatesite url="http://download.eclipse.org/efxclipse/updates-released/2.0.0/site"/>
+			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site"/>
 			<updatesite url="http://download.eclipse.org/releases/mars"/>
 			<!--updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/e4-tools/site/"/-->
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
@@ -99,7 +99,7 @@
 			<installunit name="ca.ecliptical.pde.ds.feature.group" />
 			<installunit name="bndtools.main.feature.feature.group" />
 			<installunit name="bndtools.jarviewer.feature.feature.group" />
-			
+
 			<installunit name="AnyEditTools.feature.group" />
 			<installunit name="de.loskutov.BytecodeOutline.feature.feature.group" />
 			<installunit name="DataHierarchy.feature.group" />
