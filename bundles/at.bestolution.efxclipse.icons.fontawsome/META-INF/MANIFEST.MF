@@ -7,5 +7,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.fx.ui.controls;bundle-version="1.0.0"
 Service-Component: OSGI-INF/services/awesomeiconfontprovider.xml
-Require-Capability: osgi.extender; filter:="(osgi.extender=osgi.serviceloader.registrar)"
-Provide-Capability: osgi.serviceloader; osgi.serviceloader=org.eclipse.fx.ui.controls.image.skin.spi.FontIconProvider
+Export-Package: at.bestolution.efxclipse.icons.fontawsome
