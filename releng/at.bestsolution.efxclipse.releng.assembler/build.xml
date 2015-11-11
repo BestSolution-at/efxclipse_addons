@@ -98,7 +98,6 @@
 			<installunit name="org.eclipse.fx.ide.feature.feature.group" />
 			<installunit name="ca.ecliptical.pde.ds.feature.group" />
 			<installunit name="bndtools.main.feature.feature.group" />
-			<installunit name="bndtools.jarviewer.feature.feature.group" />
 
 			<installunit name="AnyEditTools.feature.group" />
 			<installunit name="de.loskutov.BytecodeOutline.feature.feature.group" />
