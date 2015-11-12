@@ -1,5 +1,5 @@
 <project default="publish">
-	<property name="efx.version" value="2.1.0-SNAPSHOT" />
+	<property name="efx.version" value="2.2.0-SNAPSHOT" />
 	<property name="efx.distojar" value="at.bestsolution.releng.distrobuilder-0.0.1-SNAPSHOT.jar" />
 
 	<taskdef name="builder" classpath="${efx.distojar}" classname="at.bestsolution.releng.distrobuilder.ant.DistroBuilderTaskDef" />
@@ -67,8 +67,8 @@
 		<echo>Building distros</echo>
 		<deltree dir="/tmp/efxclipse-build/dist"/>
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
-			<updatesite url="http://download.eclipse.org/efxclipse/updates-released/2.1.0/site"/>
-			<!--updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site"/-->
+			<!--updatesite url="http://download.eclipse.org/efxclipse/updates-released/2.1.0/site"/-->
+			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site"/>
 			<updatesite url="http://download.eclipse.org/releases/mars"/>
 			<!--updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/e4-tools/site/"/-->
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
