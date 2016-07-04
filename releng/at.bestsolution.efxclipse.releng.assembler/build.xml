@@ -1,5 +1,5 @@
 <project default="publish">
-	<property name="efx.version" value="2.3.0-SNAPSHOT" />
+	<property name="efx.version" value="2.4.0-SNAPSHOT" />
 	<property name="efx.distojar" value="at.bestsolution.releng.distrobuilder-0.0.1-SNAPSHOT.jar" />
 
 	<taskdef name="builder" classpath="${efx.distojar}" classname="at.bestsolution.releng.distrobuilder.ant.DistroBuilderTaskDef" />
