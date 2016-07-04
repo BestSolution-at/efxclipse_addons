@@ -69,7 +69,7 @@
 		<builder builddirectory="/tmp/efx-build" p2directorexecutable="/var/lib/jenkins/efxclipse-build/builder/eclipse" targetdirectory="/var/lib/jenkins/efxclipse-build/targets" staticreposdirectory="/var/lib/jenkins/efxclipse-build/repos" distdirectory="/tmp/efxclipse-build/dist" version="${efx.version}">
 			<!--updatesite url="http://download.eclipse.org/efxclipse/updates-released/2.1.0/site"/-->
 			<updatesite url="http://download.eclipse.org/efxclipse/updates-nightly/site"/>
-			<updatesite url="http://download.eclipse.org/releases/mars"/>
+			<updatesite url="http://download.eclipse.org/releases/neon"/>
 			<!--updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/e4-tools/site/"/-->
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
 			<!--updatesite url="http://download.eclipticalsoftware.com/updates/"/-->
