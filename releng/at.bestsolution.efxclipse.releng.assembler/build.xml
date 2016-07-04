@@ -72,7 +72,7 @@
 			<updatesite url="http://download.eclipse.org/releases/mars"/>
 			<!--updatesite url="http://downloads.efxclipse.bestsolution.at/p2-repos/e4-tools/site/"/-->
 			<updatesite url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
-			<updatesite url="http://download.eclipticalsoftware.com/updates/"/>
+			<!--updatesite url="http://download.eclipticalsoftware.com/updates/"/-->
 			<updatesite url="http://dl.bintray.com/bndtools/bndtools/latest/"/>
 			<updatesite url="http://andrei.gmxhome.de/eclipse/"/>
 			<updatesite url="http://update.eclemma.org/"/>
@@ -96,7 +96,7 @@
 			<installunit name="org.eclipse.e4.core.tools.feature.feature.group" />
 
 			<installunit name="org.eclipse.fx.ide.feature.feature.group" />
-			<installunit name="ca.ecliptical.pde.ds.feature.group" />
+			<!--installunit name="ca.ecliptical.pde.ds.feature.group" /-->
 			<installunit name="bndtools.main.feature.feature.group" />
 
 			<installunit name="AnyEditTools.feature.group" />
