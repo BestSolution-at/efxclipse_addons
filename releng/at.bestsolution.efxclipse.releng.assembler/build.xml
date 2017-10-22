@@ -85,9 +85,9 @@
 
 			<installunit name="org.eclipse.wst.xml_ui.feature.feature.group" />
 			<installunit name="org.eclipse.egit.feature.group" />
-			<installunit name="org.tigris.subversion.clientadapter.feature.feature.group" />
-			<installunit name="org.tigris.subversion.subclipse.feature.group" />
-			<installunit name="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" />
+			<!--installunit name="org.tigris.subversion.clientadapter.feature.feature.group" /-->
+			<!--installunit name="org.tigris.subversion.subclipse.feature.group" /-->
+			<!--installunit name="org.tigris.subversion.clientadapter.svnkit.feature.feature.group" /-->
 
 			<installunit name="org.eclipse.m2e.feature.feature.group"/>
 
